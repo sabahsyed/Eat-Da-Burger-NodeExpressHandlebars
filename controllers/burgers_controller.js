@@ -17,9 +17,9 @@ router.get("/burgers", function(req, res) {
     });
 });
 router.post("/api/burgers", function (req, res) {
-    burger.create(["name"], [req.body.name], function (result) {
+    burger.create(req.body.name,function (result) {
       // Send back the ID of the new quote
-      res.json({ id: result.insertId });
+      res.json({ id: result.id });
     });
   });
 
@@ -32,7 +32,7 @@ router.post("/api/burgers", function (req, res) {
   
     burger.update(
       {
-        burgerData: req.body.burgerData,
+        burgerData: req.body.name,
       },
       condition,
       function (result) {

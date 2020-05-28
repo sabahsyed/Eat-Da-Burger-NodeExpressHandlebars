@@ -27,4 +27,7 @@ li {
     margin: 0;
     padding: 0;
   }
-  
+  #devour{
+    color:white;
+    font-weight: bold;
+  }
