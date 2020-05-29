@@ -31,7 +31,7 @@ router.post("/api/burgers", function (req, res) {
     console.log("condition", condition);
     burger.update(
       {
-        burgerData: req.body.name,
+        burger_data: req.body.name,
       },
       condition,
       function (result) {
@@ -43,7 +43,6 @@ router.post("/api/burgers", function (req, res) {
       }
     );
   });
-  
 
 
 module.exports =  router;

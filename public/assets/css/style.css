@@ -3,7 +3,10 @@ li {
     margin: 5px;
     background: #faebd7;
   }
-  
+  h1{
+    text-align: center;
+    text-shadow: yellow;
+  }
   .label {
     font-weight: bold;
   }
