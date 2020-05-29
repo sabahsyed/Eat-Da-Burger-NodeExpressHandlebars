@@ -14,7 +14,7 @@
     <div class="col-md-3 text-center">
         <form class="devour-form button-size">
             <input input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
-            <button type="submit" class="btn btn-default" class = "devour" id = "devour">Devour it!</button>
+            <button type="submit" class="btn btn-default devourBtn" class = "devour" id = "devour">Devour it!</button>
         </form>
     </div>
     {{/unless}}
@@ -24,6 +24,7 @@
 </div>
 
 <h2>Eaten burgers!</h2>
+
 
 <ul>
   {{#each burger_data}}
@@ -43,6 +44,7 @@
     <label for="burger_name">Burger Name:</label>
     <input type="text" id="burger_name" name="name">
   </div>
+
 
   <button type="submit">Add Burger</button>
 </form>
