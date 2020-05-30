@@ -1,3 +1,6 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 li {
     padding: 5px;
     margin: 5px;
@@ -6,6 +9,9 @@ li {
   h1{
     text-align: center;
     text-shadow: yellow;
+  }
+  h2{
+    color: tomato;
   }
   .label {
     font-weight: bold;
@@ -33,4 +39,15 @@ li {
   #devour{
     color:white;
     font-weight: bold;
+  }
+  .devourBtn{
+    text: white;
+    background-color: tomato;
+  }
+  .card{
+    background-color: transparent !important;
+    border: none !important
+  }
+  .card-body{
+    width: 40%;
   }
