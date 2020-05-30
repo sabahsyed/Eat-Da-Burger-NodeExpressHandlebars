@@ -58,7 +58,6 @@ var orm = {
     queryString += "VALUES (";
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
-    console.log(queryString);
     connection.query(queryString, vals, function (err, result) {
       if (err) {
         throw err;
@@ -66,23 +65,7 @@ var orm = {
       cb(result);
     });
   },
-  // update: function (table, objColVals, condition, cb) {
-  //   var queryString = "UPDATE " + table;
-
-  //   queryString += " SET ";
-  //   queryString += objToSql(objColVals);
-  //   queryString += " WHERE ";
-  //   queryString += condition;
-
-  //   console.log("I AM UPDATE"  + queryString);
-  //   connection.query(queryString, function (err, result) {
-  //     if (err) {
-  //       throw err;
-  //     }
-  //     cb(result);
-  //   });
-    
-  // }
+ 
   update :  function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 

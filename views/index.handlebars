@@ -1,6 +1,6 @@
-<h1>Burgers</h1>
+<h1>EAT-A-BURGER</h1>
 
-<h2>Available burgers!</h2>
+<h2>To be Devoured!</h2>
 <div class="row">
 <div class="col-sm-12">
     <div class="card">
@@ -33,20 +33,18 @@
 
 <h2> Devoured!</h2>
 <div class ="row">
-<ul>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item" style= "color: white; background-color:transparent">
   {{#each burger_data}}
   {{#if this.devoured}}
   <div class="col-md-12 text-center">
-    <span>{{this.burger_name}}
-    </span>
+    <span>{{this.burger_name}}</span>
   </div>
   {{/if}}
   {{/each}}
+  </li>
 </ul>
 </div>
-
-
-
 
 
 <h2>Add a burger</h2>
@@ -54,12 +52,12 @@
 <form class="create-form">
   <div class="col-md-12 text-center">
   <div class="form-group">
-    <label for="burger_name">Burger Name:</label>
-    <input type="text" id="burger_name" name="name">
+    <label for="burger_name" class= "burgerNameLabel">Burger Name:</label>
+    <input type="text" id="burger_name" name="name"><button type="submit" class= "add">Add</button>
   </div>
 
 
-  <button type="submit">Submit</button>
+ 
   </div>
 </form>
 </div>

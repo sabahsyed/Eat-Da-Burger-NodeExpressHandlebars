@@ -8,10 +8,13 @@ li {
   }
   h1{
     text-align: center;
-    text-shadow: yellow;
+    padding: 10px;
+    margin:10px;
   }
   h2{
     color: tomato;
+    padding: 10px;
+    margin:10px;
   }
   .label {
     font-weight: bold;
@@ -50,4 +53,13 @@ li {
   }
   .card-body{
     width: 40%;
+  }
+  .burgerNameLabel{
+    padding: 10px;
+    margin:10px;
+  }
+  .add{
+    padding: 10px;
+    margin:10px;
+    
   }
