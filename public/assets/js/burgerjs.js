@@ -1,8 +1,8 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".devour").on("click", function(event) {
-      var id = $(".burger_id").data("id");
-      
+      var id = $(".burger_id").val();
+      console.log("ID"+ id );
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
